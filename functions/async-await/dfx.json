@@ -1,0 +1,20 @@
+{
+  "canisters": {
+    "factorial": {
+      "type": "motoko",
+      "main": "factorial.mo"
+    },
+    "notificator": {
+      "type": "motoko",
+      "main": "notificator.mo"
+    },
+    "main": {
+      "dependencies": [
+        "factorial",
+        "notificator"
+      ],
+      "type": "motoko",
+      "main": "main.mo"
+    }
+  }
+}
