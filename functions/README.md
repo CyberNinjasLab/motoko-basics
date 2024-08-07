@@ -5,7 +5,7 @@ To organize the code in a program well, we use functions. In addition to improvi
 Functions typically accept arguments and return a value of a specific type.
 It is possible for a function to not return a value - `()`
 
-![Function Declaration](./FunctionDeclaration.jpg)
+![Function Declaration](./img/FunctionDeclaration.jpg)
 
 Types of functions:
 - **Public**: Can be accessed outside the scope of the module/actor in which they are defined.
@@ -13,3 +13,7 @@ Types of functions:
 - **Public Query**: Does not go through consensus - fast performance ~100ms. By default, query functions are shared.
 - **Private**: Accessible only within the module/actor.
 - **Async**: Return an immediate promise, allowing the caller not to wait for the final response (result).
+
+You can find the examples in the following files:
+- **`functions.mo`**: Examples of Public, Shared, Query, and Private functions
+- **`./async-await`**: Examples of Async, Await, and Ignore functions
