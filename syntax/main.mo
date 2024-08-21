@@ -71,7 +71,7 @@ actor Main {
     };
 
     // Function to get the current state
-    public func getState(): async Nat {
+    public func getState(): Nat {
       return state;
     };
   };
@@ -79,11 +79,11 @@ actor Main {
   // Function to increment the state of myObject
   public func incrementMyObjectState(): async Nat {
     await myObject.increment();
-    return await myObject.getState();
+    return myObject.getState();
   };
 
   // Function to get the current state of myObject
-  public func getMyObjectState(): async Nat {
-    return await myObject.getState();
+  public query func getMyObjectState(): async Nat {
+    return myObject.getState();
   };
 }
